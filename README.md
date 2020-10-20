@@ -39,7 +39,7 @@ jobs:
         working-directory: "./functions"
       - uses: imenesesl/firebase-tools-action@main
         with:
-          args: firebase deploy --only functions
+          args: deploy --only functions
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
